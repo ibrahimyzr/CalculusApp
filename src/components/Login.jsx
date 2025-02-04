@@ -72,7 +72,10 @@ const Login = () => {
   return (
     <section>
       <div className="container mt-5 mb-5 d-flex justify-content-center">
-        <div className="card text-center border-light ">
+        <div
+          className="card text-center border-light "
+          style={{ backgroundColor: "antiquewhite" }}
+        >
           <div className="card-body ">
             <h2 className="">Please Login</h2>
             <form onSubmit={handleSubmit}>
@@ -142,11 +145,11 @@ const Login = () => {
           </div>
           <p className="form-control mt-5">
             Already have an account? Please{" "}
-            <Link className="text-blue-500 underline" to="/register">
+            <Link className="text-primary underline" to="/register">
               Register
             </Link>
           </p>
-          {error && <p className="text-red-500 text-center">{error}</p>}
+          {error && <p className="text-danger text-center">{error}</p>}
         </div>
       </div>
     </section>

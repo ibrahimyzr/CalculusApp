@@ -34,8 +34,8 @@ const Header = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-secondary header">
-      <div className="container-fluid ">
+    <nav className="navbar navbar-expand-md navbar-light bg-secondary py-0 py-lg-0">
+      <div className="container-fluid">
         <Link to="./">
           <p
             className="logo"
@@ -52,10 +52,18 @@ const Header = () => {
           data-bs-toggle="collapse"
           data-bs-target="#navbarCollapse"
         >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+          <span className="navbar-toggler-icon h6"></span>
+        </button>{" "}
         <div className="collapse navbar-collapse" id="navbarCollapse">
-          <div className="navbar-nav " style={{ marginLeft: 100 }}>
+          <div
+            className="navbar-nav"
+            style={{
+              marginLeft: 200,
+              alignItems: "flex-end",
+              gap: 20,
+              marginTop: 10,
+            }}
+          >
             <Link to="/">
               <p
                 className={`${activeTab === "Home" ? "active" : "notactive"}`}
@@ -125,9 +133,7 @@ const Header = () => {
           </div>
           {user ? (
             <div className="navbar-nav ms-auto bg-secondary">
-              <p style={{ marginRight: 10, marginTop: 15 }}>
-                {user.displayName}
-              </p>
+              <p style={{ marginRight: 10 }}>{user.displayName}</p>
               {""} {""} {""} {""} {""} {""} {""} {""}
               {/*   <img
                 className="w-10 h-10 rounded-full object-cover"
@@ -138,7 +144,6 @@ const Header = () => {
                 className="btn btn-info"
                 style={{
                   borderBlockColor: "cornflowerblue",
-                  fontStyle: "bold",
                 }}
                 onClick={handleLogOut}
               >
@@ -152,7 +157,7 @@ const Header = () => {
                   className="btn btn-info"
                   style={{
                     borderBlockColor: "cornflowerblue",
-                    fontStyle: "bold",
+
                     marginRight: 15,
                   }}
                 >

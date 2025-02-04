@@ -1,40 +1,12 @@
-.header{
-    overflow:hidden;
-    background-color:white;
-    box-shadow: 4px 1px 2px 1px;
-    height: 50px;
-    text-align:center;
- 
-   
-}
-.header p{
-    float:left;
-    color:white;
-    text-align:center;
-    padding:10px;
-    text-decoration: none;
-    font-size:18px;
-    line-height:1px;
-    border-radius:4px;
-}
 
-.inputField{
-   height:30px;
-    width:80% !important;
-    margin-top:60px;
-    margin-right:5px;
-    margin-bottom:5px;
-    border:none;
-    font-size:17px;
 
- 
-}
 
  .logo img {
-  width: 30px;
-  height: 30px;
-  display: inline;
-  margin-left: 2px;
+  width: 25px;
+  height: 25px;
+  /* display: inline; */
+  margin-left: 5px;
+  margin-right: 8px;
 
   
 }
@@ -62,27 +34,27 @@
     border-radius: 20%;
 }
 
-.header p.active{
-    float:right;
+p.active{
+    /* float:right; */
     display:flex;
  
-    justify-content:center;
-    align-items:center;
+    /* justify-content:center;
+    align-items:center; */
     color: red;
     background-color:cornflowerblue;
     font-weight: bold;
     border-radius: 20%;
-    margin-top: 20px;
-    margin-left: 10px;
+
+    /* margin-left: 10px; */
 
 }
 
-.header p.notactive{
+ p.notactive{
 
   color:white;
   justify-content:center;
   align-items:center;
-  margin-top: 20px;
+
   margin-left: 10px;
 }
 
