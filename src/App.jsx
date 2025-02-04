@@ -4,6 +4,8 @@ import "./App.css";
 
 import Footer from "../src/components/Footer";
 
+import { Analytics } from "@vercel/analytics/react";
+
 function App() {
   return (
     <>
@@ -12,6 +14,7 @@ function App() {
         <Outlet />
       </main>
       <Footer></Footer>
+      <Analytics />
     </>
   );
 }
