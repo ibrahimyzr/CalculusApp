@@ -121,7 +121,6 @@ const Header = () => {
         {user ? (
           <div
             style={{
-              backgroundColor: "white",
               borderBlockColor: "cornflowerblue",
               fontSize: 12,
               fontStyle: "bold",
@@ -142,7 +141,6 @@ const Header = () => {
               <button
                 className="btn btn-info"
                 style={{
-                  backgroundColor: "white",
                   borderBlockColor: "cornflowerblue",
                   fontSize: 12,
                   fontStyle: "bold",
