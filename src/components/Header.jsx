@@ -34,22 +34,28 @@ const Header = () => {
   };
 
   return (
-    <div className="header bg-secondary">
-      <div className="navbar navbar navbar-static-top ">
-        <div>
-          <Link to="./">
-            <p
-              className="logo"
-              onClick={() => setActiveTab("Home")}
-              style={{ marginBottom: 75 }}
-            >
-              <img src={logo}></img>
-              Calculus-Diff
-            </p>
-          </Link>
-        </div>
-        <nav style={{ marginBottom: 40 }}>
-          <ul className="header-right">
+    <nav className="navbar navbar-expand-lg navbar-light bg-secondary header">
+      <div className="container-fluid ">
+        <Link to="./">
+          <p
+            className="logo"
+            onClick={() => setActiveTab("Home")}
+            style={{ marginBottom: 0 }}
+          >
+            <img src={logo}></img>
+            Calculus-Diff
+          </p>
+        </Link>
+        <button
+          type="button"
+          className="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarCollapse">
+          <div className="navbar-nav " style={{ marginLeft: 100 }}>
             <Link to="/">
               <p
                 className={`${activeTab === "Home" ? "active" : "notactive"}`}
@@ -58,7 +64,6 @@ const Header = () => {
                 Ana Sayfa
               </p>
             </Link>
-
             <Link to="/about">
               <p
                 className={`${activeTab === "About" ? "active" : "notactive"}`}
@@ -89,6 +94,7 @@ const Header = () => {
               </p>
             </Link>
 
+            {/* xxxxxxxxxxxxxxxxx */}
             {user && admin && (
               <>
                 <Link to="/dashboard">
@@ -116,58 +122,48 @@ const Header = () => {
                 </Link>
               </>
             )}
-          </ul>
-        </nav>
-        {user ? (
-          <div
-            style={{
-              borderBlockColor: "cornflowerblue",
-              fontSize: 12,
-              fontStyle: "bold",
-              marginBottom: 75,
-            }}
-          >
-            <p className="font-semibold">{user.displayName}</p>
-            {/*   <img
+          </div>
+          {user ? (
+            <div className="navbar-nav ms-auto bg-secondary">
+              <p style={{ marginRight: 10, marginTop: 15 }}>
+                {user.displayName}
+              </p>
+              {""} {""} {""} {""} {""} {""} {""} {""}
+              {/*   <img
                 className="w-10 h-10 rounded-full object-cover"
                 src={user.photoURL}
                 alt={`photo of ${user.displayName}`}
               /> */}
-            <button onClick={handleLogOut}>Logout</button>
-          </div>
-        ) : (
-          <div>
-            <Link to="/login">
               <button
                 className="btn btn-info"
                 style={{
                   borderBlockColor: "cornflowerblue",
-                  fontSize: 12,
-                  fontStyle: "bold",
-                  marginBottom: 75,
-                  marginRight: 15,
-                }}
-              >
-                Login
-              </button>
-            </Link>
-            {/*         <Link to="/register">
-              <button
-                className="btn btn-info"
-                style={{
-                  backgroundColor: "white",
-                  borderBlockColor: "cornflowerblue",
-                  fontSize: 10,
                   fontStyle: "bold",
                 }}
+                onClick={handleLogOut}
               >
-                Register
+                Logout
               </button>
-            </Link> */}
-          </div>
-        )}
+            </div>
+          ) : (
+            <div className="navbar-nav ms-auto ">
+              <Link to="/login">
+                <button
+                  className="btn btn-info"
+                  style={{
+                    borderBlockColor: "cornflowerblue",
+                    fontStyle: "bold",
+                    marginRight: 15,
+                  }}
+                >
+                  Login
+                </button>
+              </Link>
+            </div>
+          )}
+        </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

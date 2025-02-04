@@ -65,21 +65,25 @@
 .header p.active{
     float:right;
     display:flex;
-    gap:10px;
+ 
     justify-content:center;
     align-items:center;
     color: red;
     background-color:cornflowerblue;
     font-weight: bold;
     border-radius: 20%;
+    margin-top: 20px;
+    margin-left: 10px;
 
 }
 
 .header p.notactive{
-  background-color:white;
-  color: black;
+
+  color:white;
   justify-content:center;
   align-items:center;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
 .header-right{

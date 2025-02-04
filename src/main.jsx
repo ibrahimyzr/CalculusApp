@@ -22,11 +22,11 @@ import Linear from "./components/Linear.jsx";
 import AppliedMath from "./components/AppliedMath.jsx";
 import Numeric from "./components/Numeric.jsx";
 
-// Bootstrap CSS
-import "bootstrap/dist/css/bootstrap.min.css";
-// Bootstrap Bundle JS
-import "bootstrap/dist/js/bootstrap.bundle.min";
-import "bootstrap-icons/font/bootstrap-icons.css";
+// // Bootstrap CSS
+// import "bootstrap/dist/css/bootstrap.min.css";
+// // Bootstrap Bundle JS
+// import "bootstrap/dist/js/bootstrap.bundle.min";
+// import "bootstrap-icons/font/bootstrap-icons.css";
 
 const router = createBrowserRouter([
   {
