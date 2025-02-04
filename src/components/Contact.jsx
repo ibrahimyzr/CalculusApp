@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import db from "../firebase/firebase";
+import db from "../firebase/firebase.config";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 
 function Contact() {
