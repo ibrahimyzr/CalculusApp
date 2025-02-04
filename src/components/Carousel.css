@@ -1,0 +1,32 @@
+
+
+
+.slidetext p {
+    color:black;
+    text-decoration: solid;
+    font-weight: bold;
+    font-size:25px;
+}
+
+.baslik h3 {
+    color:black;
+    text-decoration: solid;
+    font-weight: bold;
+    font-size:80px;
+    font-style: italic;
+    margin-top: 1000px;
+   
+  
+}
+
+.baslik h4 {
+    color:black;
+    text-decoration: solid;
+    font-weight: bold;
+    font-size:40px;
+    font-style: italic;
+
+   
+  
+}
+
