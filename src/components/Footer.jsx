@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div>
+    <footer className="fixed-bottom">
       <div className="bg-light py-1 py-md-1  border-dark">
         <div className="container overflow-hidden">
           <div className="credits text-center">
@@ -9,7 +9,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
