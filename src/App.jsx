@@ -9,7 +9,12 @@ import { Analytics } from "@vercel/analytics/react";
 function App() {
   return (
     <>
-      <Header />
+      <Header>
+        <meta
+          name="google-site-verification"
+          content="q92qtKfBAvuF0wl0-a1-zcVtqJLMzoX847ljng22C5c"
+        />
+      </Header>
       <main className="container mx-auto">
         <Outlet />
       </main>

@@ -35,10 +35,6 @@ const Header = () => {
 
   return (
     <nav className="navbar navbar-expand-md navbar-light bg-secondary py-0 py-lg-0">
-      <meta
-        name="google-site-verification"
-        content="q92qtKfBAvuF0wl0-a1-zcVtqJLMzoX847ljng22C5c"
-      />
       <div className="container-fluid">
         <Link to="./">
           <p
