@@ -7,6 +7,10 @@ const Home = () => {
 
   return (
     <section>
+      <meta
+        name="google-site-verification"
+        content="q92qtKfBAvuF0wl0-a1-zcVtqJLMzoX847ljng22C5c"
+      />
       <div
         className=" mt-1"
         style={{
