@@ -43,7 +43,7 @@ const Header = () => {
             style={{ marginBottom: 0 }}
           >
             <img src={logo}></img>
-            Calculus-Diff
+            Matematik.Space
           </p>
         </Link>
         <button

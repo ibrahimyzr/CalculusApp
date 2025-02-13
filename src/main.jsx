@@ -13,6 +13,7 @@ import PrivateRoute from "./components/PrivateRoute.jsx";
 import Dashboard from "./components/Dashboard.jsx";
 import Messages from "./components/Messages.jsx";
 import Courses from "./components/Courses.jsx";
+import Rezervation from "./components/Rezervation.jsx";
 
 import Calculus1 from "./components/Calculus1.jsx";
 import Calculus2 from "./components/Calculus2.jsx";
@@ -78,6 +79,10 @@ const router = createBrowserRouter([
       {
         path: "numeric",
         element: <Numeric />,
+      },
+      {
+        path: "rezervation",
+        element: <Rezervation />,
       },
       {
         path: "messages",

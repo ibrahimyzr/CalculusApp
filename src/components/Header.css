@@ -1,4 +1,18 @@
 
+.logo {
+
+  color: white;
+  font-size: 25px;
+  font-style:normal;
+  font-family: 'Franklin Gothic Medium';
+}
+
+.logo:hover{
+  color: red;
+  background-color:cornflowerblue;
+  font-weight: bold;
+  border-radius: 20%;
+}
 
 
  .logo img {
