@@ -82,7 +82,11 @@ const router = createBrowserRouter([
       },
       {
         path: "rezervation",
-        element: <Rezervation />,
+        element: (
+          <PrivateRoute>
+            <Rezervation />
+          </PrivateRoute>
+        ),
       },
       {
         path: "messages",

@@ -34,7 +34,7 @@ const ACarousel = () => {
             alt="Image One"
           />
           <Carousel.Caption>
-            <h3> Mathematic </h3>
+            <h3> Mathematics </h3>
             <h4>Özel Ders</h4>
             <p>Yüz yüze </p>
             {/*          <p>
@@ -153,7 +153,7 @@ const ACarousel = () => {
             alt="Image Two"
           />
           <Carousel.Caption>
-            <h3>Applied Mathematic </h3>
+            <h3>Applied Mathematics </h3>
             <h4>Özel Ders</h4>
             <p>Yüz yüze </p>
             {/*      <p>
